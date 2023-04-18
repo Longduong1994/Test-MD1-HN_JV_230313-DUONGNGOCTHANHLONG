@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Học Viên</title>
+    <link rel="stylesheet" href="./test.css" />
+  </head>
+  <body>
+    <section class="container-input">
+        <form  class="form" action="">
+            
+            <h1>Thông tin học viên</h1>
+            <div>
+              <span>Họ và tên</span>
+              <input id="name" type="text" placeholder="vui lòng nhập tên" va name="name" />
+            </div>
+            <div>
+              <span>Email</span>
+              <input id="email" type="email" placeholder="vui lòng nhập email" name="email" />
+            </div>
+            <div>
+              <span>Điện thoại</span>
+              <input id="phoneNumber" type="number" placeholder="vui lòng nhập số điện thoại" />
+            </div>
+            <div>
+              <span>Quê quán</span>
+              <input id="address" type="text" placeholder="vui lòng nhập quê quán" />
+            </div>
+            <div>
+              <select name="gender" class="form-select" id="gender">
+                <option selected >Nam</option>
+                <option value="Pending">Nam</option>
+                <option value="Fullfill">Nữ</option>
+               
+              </select>
+      </select>
+
+      </div>
+            </div>
+            <div>
+              <button class="btn-submit" type="submit">Lưu lại</button>
+            </div>
+          </section>
+        </form>
+        <section class="container-output">
+          <h1>Danh Sách Học Viên</h1>
+          <div class="search-box">
+            <span>Tìm kiếm học viên:</span>
+            <input type="text" /><button class="btn-search">search</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Gender</th>
+                <th>Hành động</th>
+                <th><button id="sort-btn">Sắpp xếp (alpha b)</button></th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+          <!-- <tr>
+            <td>1</td>
+            <td>Long</td>
+            <td>longduong@gmail.com</td>
+            <td>0921131688</td>
+            <td>Hà Nội</td>
+            <td>Nam</td>
+            <td>
+              <button class="btn-edit">edit</button>
+               <button class="btn-delete">delete</button> 
+            </td> -->
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+  <script src="./test.js"></script>
+</html>
